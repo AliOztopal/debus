@@ -1,0 +1,120 @@
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Gestion du parent */
+
+#connexion_content {
+    padding: 50px 70px 50px 70px;
+    background-color: #FF7742;
+    border-radius: 10px;
+    border: 3px solid #717171;
+}
+
+#connexion_content > span {
+    font-size: 30px;
+}
+
+/* Gestion du lien de redirection vers l'inscription */
+
+#connexion_content > #connexion_inscription {
+    width: 100%;
+    text-align: center;
+}
+
+#connexion_content > #connexion_inscription > a {
+    text-decoration: none;
+    color: #f9f9f9;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border 1s;
+}
+
+#connexion_content > #connexion_inscription > a:hover {
+
+    border-bottom: 1px solid #f9f9f9;
+}
+
+/* Gestion du formulaire */
+
+#connexion_form {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#connexion_form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#connexion_form > form > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 90%;
+}
+
+/* Gestion des inputs */
+
+#connexion_form > form input[type=text],
+#connexion_form > form input[type=password] {
+    border: 0;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+    padding: 5px;
+    line-height: 7px;
+    font-size: 20px;
+}
+
+#connexion_form > form input[type=text]:focus,
+#connexion_form > form input[type=password]:focus {
+    outline: none;
+}
+
+/* Gestion du bouton */
+
+#connexion_form > form input[type=submit] {
+    border: 0;
+    background-color: #717171;
+    color: #F9F9F9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#connexion_form > form input[type=submit]:hover {
+    background-color: #3b3b3b;
+    cursor: pointer;
+}
+
+#connexion_form > form input[type=submit]:active {
+    background-color: #222222;
+    outline: none;
+}
+
+#connexion_form > form input[type=submit]:focus {
+    outline: none;
+    border: 1px solid #F9F9F9;
+}
+
+/* Gestion des messages d'erreur */
+
+#connexion_error {
+    height: 50px;
+    padding: 0 70px;
+    background-color: #db4545;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
